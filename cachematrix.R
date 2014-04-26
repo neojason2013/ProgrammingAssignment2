@@ -39,8 +39,7 @@ cacheSolve <- function(x, ...) {
 }
 
 testcase <- function() {
-  mat <- c(1,2,3,4)
-  dim(mat) <- c(2,2)
+  mat <- matrix(c(1,2,3,4), 2, 2)
   x <- makeCacheMatrix(mat)
   print (cacheSolve(x))
   # ans should be
